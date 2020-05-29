@@ -23,6 +23,6 @@ RUN cd ${ANDROID_HOME} \
 
 # Download android sdk, ndk and tools
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --list
-RUN yes | ${ANDROID_HOME}/tools/bin/sdkmanager --licenses --sdk_root=${ANDROID_HOME}
+RUN yes | ${ANDROID_HOME}/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses 
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} "platform-tools" "platforms;android-28" "ndk-bundle"
 ENV PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools
