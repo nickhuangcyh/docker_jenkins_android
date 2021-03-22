@@ -8,6 +8,8 @@ ENV ANDROID_HOME=/opt/android-sdk-linux
 USER root
 
 RUN apt-get update
+RUN yes | apt-get install zip unzip
+RUN yes | apt-get install python3
 
 # Create android sdk directory and change user:group permission
 RUN mkdir -p ${ANDROID_HOME}
