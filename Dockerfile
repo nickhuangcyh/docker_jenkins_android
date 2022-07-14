@@ -16,7 +16,7 @@ RUN mkdir -p ${ANDROID_HOME}
 RUN chown -R jenkins:jenkins ${ANDROID_HOME}
 
 # Download gdrive binary file into /usr/local/bin and change own/mod
-RUN curl https://raw.githubusercontent.com/nickhuang9527/gdrive-binaries/main/linux/gdrive-linux-x64 --output /usr/local/bin/gdrive
+RUN curl https://raw.githubusercontent.com/nickhuangcyh/gdrive-binaries/main/linux/gdrive-linux-x64 --output /usr/local/bin/gdrive
 RUN chown jenkins:jenkins /usr/local/bin/gdrive
 RUN chmod a+x /usr/local/bin/gdrive
 
