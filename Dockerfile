@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:lts-jdk11
 
 LABEL maintainer="NickHuang <nickhuang@climax.com.tw>"
 
